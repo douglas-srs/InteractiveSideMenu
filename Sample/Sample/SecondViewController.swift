@@ -1,5 +1,5 @@
 //
-// MenuItemContentViewController.swift
+// SecondViewController.swift
 //
 // Copyright 2017 Handsome LLC
 //
@@ -17,14 +17,11 @@
 //
 
 import UIKit
+import InteractiveSideMenu
 
-open class MenuItemContentViewController: UIViewController {
+class SecondViewController: MenuItemContentViewController {
     
-    private var menuContainerViewController: MenuContainerViewController {
-        return self.parent as! MenuContainerViewController
-    }
-    
-    public func showMenu() {
-        menuContainerViewController.showMenu()
+    @IBAction func didOpenMenu(_ sender: UIButton) {
+        showMenu()
     }
 }
